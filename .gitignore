@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+venv/
+env/
+.venv/
+
+# Next.js Build Output
+frontend/.next/
+frontend/out/
+
+# Python Cache & Databases
+__pycache__/
+backend/__pycache__/
+backend/routers/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+backend/.pytest_cache/
+
+# SQLite Database Files
+*.db
+*.sqlite3
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

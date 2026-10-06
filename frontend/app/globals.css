@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-aws-bgLight dark:bg-aws-bgDark text-aws-textLight dark:text-aws-textDark antialiased text-sm font-sans selection:bg-aws-orange selection:text-white;
+  }
+}
+
+/* Custom AWS Console utility styling */
+.aws-btn-primary {
+  @apply bg-aws-orange hover:bg-aws-orangeHover text-white font-semibold py-1.5 px-4 rounded text-xs transition duration-150 ease-in-out shadow-sm disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.aws-btn-secondary {
+  @apply bg-white dark:bg-aws-cardDark border border-aws-borderLight dark:border-aws-borderDark text-aws-textLight dark:text-aws-textDark hover:bg-gray-50 dark:hover:bg-gray-800 font-semibold py-1.5 px-3 rounded text-xs transition duration-150 ease-in-out shadow-sm disabled:opacity-50;
+}
+
+.aws-btn-danger {
+  @apply bg-red-600 hover:bg-red-700 text-white font-semibold py-1.5 px-3 rounded text-xs transition duration-150 ease-in-out shadow-sm disabled:opacity-50;
+}
+
+.aws-card {
+  @apply bg-white dark:bg-aws-cardDark border border-aws-borderLight dark:border-aws-borderDark rounded shadow-sm p-4;
+}
+
+.aws-input {
+  @apply bg-white dark:bg-gray-900 border border-aws-borderLight dark:border-aws-borderDark text-aws-textLight dark:text-aws-textDark text-xs rounded px-3 py-1.5 focus:outline-none focus:ring-1 focus:ring-aws-blue focus:border-aws-blue w-full;
+}
+
+.aws-select {
+  @apply bg-white dark:bg-gray-900 border border-aws-borderLight dark:border-aws-borderDark text-aws-textLight dark:text-aws-textDark text-xs rounded px-3 py-1.5 focus:outline-none focus:ring-1 focus:ring-aws-blue focus:border-aws-blue;
+}
